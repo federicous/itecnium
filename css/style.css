@@ -1,0 +1,534 @@
+@charset "UTF-8";
+/* ######### RESETEO DE ESTILO ######### */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ######### Fuentes Importadas ######### */
+/* ######### CUERPO ######### */
+body {
+  background-color: #f1faeeff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 1px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/datacenter.jpeg");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/datacenter2.jpg"); */
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* ######### FIN CUERPO ######### */
+/* ######### TITULOS ######### */
+h1 {
+  color: #e63946ff;
+  font-size: 40px;
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  color: #1d3557ff;
+  font-size: 35px;
+  text-align: center;
+  margin: 0.25rem 0 1rem 0;
+}
+
+h3 {
+  color: #1d3557ff;
+  font-size: 20px;
+  text-align: left;
+  margin: 0.25rem 0 1rem 0;
+}
+
+/* ######### FIN TITULOS ######### */
+/* ######### PARRAFOS ######### */
+p {
+  margin: 5px;
+  text-align: justify;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 469px) {
+  p {
+    font-size: small;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+/* ######### FIN PARRAFOS ######### */
+/* Revierto estilo de Boostrap que genera padding-left indeseado a la sección secundaria */
+ol,
+ul {
+  padding-left: 0;
+}
+
+/* Pagina de error */
+.tituloError {
+  text-align: center;
+}
+
+.volverHome {
+  display: flex;
+  justify-content: center;
+}
+
+/* ######### HEADER ######### */
+header nav .contenedor {
+  justify-content: space-between;
+}
+header nav .contenedor .navBoton {
+  background-color: rgba(29, 53, 87, 0.7);
+  box-shadow: 1px 0px 10px 0px rgba(255, 255, 255, 0.75);
+}
+header nav .contenedor a .logo {
+  padding: 16px 23px;
+  margin: 5px 10px 5px 0;
+  border: 2px solid #1d3557ff;
+  border-radius: 5px;
+  width: 280px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+}
+@media (max-width: 992px) {
+  header nav .contenedor a .logo {
+    width: 220px;
+    margin: 5px auto;
+  }
+}
+header nav .contenedor .menu {
+  font-weight: bold;
+  width: 60%;
+  box-shadow: 1px 0px 10px 0px rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  background-color: rgba(29, 53, 87, 0.7);
+  z-index: 10;
+  flex-grow: 0;
+}
+header nav .contenedor .menu ul {
+  width: 100%;
+  justify-content: space-evenly;
+}
+header nav .contenedor .menu ul li {
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+}
+header nav .contenedor .menu ul li:first-of-type .menuItem {
+  border-radius: 5px 0 0 5px;
+}
+header nav .contenedor .menu ul li:last-of-type .menuItem {
+  border-radius: 0 5px 5px 0;
+}
+header nav .contenedor .menu ul li .menuItem {
+  display: block;
+  color: #f1faeeff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+header nav .contenedor .menu ul li .menuItem:hover {
+  background-color: #457b9dff;
+}
+@media (max-width: 992px) {
+  header nav .contenedor .menu ul li .menuItem {
+    padding: 10px;
+    text-align: left;
+  }
+}
+header nav .contenedor .menu ul li .dropdownContent {
+  display: none;
+  min-width: 100%;
+  position: absolute;
+  background-color: rgba(168, 218, 220, 0.8);
+  box-shadow: 4px 4px 4px #242424;
+  border-radius: 0 0 5px 5px;
+}
+header nav .contenedor .menu ul li .dropdownContent a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px 5px;
+  color: #1d3557ff;
+  border: 0.5px solid;
+  border-top: 0;
+  border-color: #1d3557ff;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+header nav .contenedor .menu ul li .dropdownContent a:last-of-type {
+  border-radius: 0 0 5px 5px;
+}
+header nav .contenedor .menu ul li .dropdownContent a:hover {
+  background-color: #457b9dff;
+}
+header nav .contenedor .menu ul li:hover .dropdownContent {
+  display: block;
+}
+@media (max-width: 992px) {
+  header nav .contenedor .menu ul li:hover .dropdownContent {
+    display: none;
+  }
+}
+
+/* ######### FIN HEADER ######### */
+/* ######## SECCIÓN PRINCIPAL ######### */
+section {
+  padding: 15px 15px;
+  margin: 30px 0px;
+  background-color: rgba(241, 250, 238, 0.6);
+  border-radius: 5px;
+}
+
+section ul li {
+  padding: 5px 5px;
+  list-style: none;
+}
+
+.mainTitle {
+  font-size: 60px;
+  color: #a8dadcff;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  align-items: center;
+}
+
+.mainSectionText {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.mainImage {
+  flex: 50%;
+}
+
+.mainImage img {
+  box-shadow: 4px 4px 4px grey;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.mainSection p {
+  margin: 20px 0 5px 0px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 22px;
+  color: #f1faeeff;
+}
+
+@media only screen and (max-width: 469px) {
+  .mainImage {
+    width: 100%;
+  }
+
+  .mainTitle {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .mainSection p {
+    text-align: justify;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  h1 {
+    color: #e63946ff;
+    font-size: 30px;
+  }
+
+  h2 {
+    color: #1d3557ff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 470px) and (max-width: 960px) {
+  .mainImage {
+    width: 100%;
+  }
+
+  .mainSection {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+  }
+}
+/* ########## sección secundaria ######### */
+.secondarySection ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.secondarySection li {
+  display: flex;
+  flex-direction: column;
+  flex: 20%;
+  align-items: center;
+}
+
+.secondarySection p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.secondarySection li h3 {
+  text-align: center;
+}
+
+.homeImages {
+  width: 180px;
+  height: 180px;
+  border: 5px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #457b9dff;
+  box-shadow: 4px 4px 4px grey;
+}
+
+.homeImages:hover {
+  border-style: solid;
+  border-color: #e63946ff;
+}
+
+.partners div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.partners img {
+  width: 200px;
+  height: 180px;
+  border: 5px;
+  border-style: solid;
+  border-color: #457b9dff;
+  box-shadow: 4px 4px 4px grey;
+  padding: 15px;
+  margin: 20px 20px;
+}
+
+#quienesTitle {
+  text-align: center;
+}
+
+.quienesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "officeThree officeThree usImage" "officeOne officeTwo usImage";
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  grid-gap: 2vw;
+}
+
+.quienesSomos {
+  padding: 10px;
+}
+
+.quienesGaleria img {
+  border-radius: 8px;
+  border: 1px solid #1d3557ff;
+}
+
+.quienesDescription {
+  grid-area: quienesDescription;
+  margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 400px) {
+  .quienesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "officeThree officeThree" "officeOne officeTwo";
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    grid-gap: 2vw;
+  }
+
+  .usImage {
+    display: none;
+  }
+}
+.usImage {
+  grid-area: usImage;
+  width: 100%;
+}
+
+#officeOne {
+  grid-area: officeOne;
+  width: 100%;
+}
+
+#officeTwo {
+  grid-area: officeTwo;
+  width: 100%;
+}
+
+#officeThree {
+  grid-area: officeThree;
+  width: 100%;
+}
+
+.clientes img {
+  width: 250px;
+  height: 180px;
+  border: 5px;
+  border-style: solid;
+  border-color: #457b9dff;
+  box-shadow: 4px 4px 4px grey;
+  padding: 15px;
+  margin: 20px 10px;
+}
+
+.clientesLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.videoProyectos {
+  display: flex;
+  justify-content: center;
+}
+
+.videoYoutube {
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+/* ######### TABLA ######### */
+table {
+  margin: 5px 5px;
+  border-style: solid;
+  border-width: 0.4px;
+  border-collapse: collapse;
+}
+
+tr,
+th,
+td {
+  padding: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.4px;
+  text-align: center;
+}
+
+th {
+  background-color: #a8dadcff;
+}
+
+/* ######### FIN TABLA ######### */
+/* ######### PIE DE PAGINA ######### */
+footer {
+  background-color: rgba(69, 123, 157, 0.7);
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 4px 4px 4px 4px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .footerItems {
+  flex-basis: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerItems .footerParagraph {
+  color: white;
+  margin: 10px;
+}
+footer .footerItems iframe {
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 4px 4px 9px black;
+}
+footer .footerItems .footerSocial {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 180px;
+}
+footer .footerItems .footerSocial a {
+  text-decoration: none;
+  color: #f1faeeff;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+footer .footerItems .footerSocial a img {
+  width: 30px;
+  margin: 0px 15px;
+}
+@media (max-width: 800px) {
+  footer .footerItems .footerSocial {
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 800px) {
+  footer .footerItems {
+    flex-basis: 100%;
+  }
+}
+
+/* ######### FIN PIE DE PAGINA ######### */
+/* ######### TRANSISIONES Y TRANSFORMACIONES ######### */
+.transitionScale * {
+  transition: all 0.5s ease-out;
+}
+
+.transitionScale *:hover {
+  transform: scale(1.02);
+}
+
+.transitionScalePlus * {
+  transition: all 0.3s ease-out;
+}
+
+.transitionScalePlus *:hover {
+  transform: scale(1.2);
+}
+
+/* ######### FIN TRANSISIONES Y TRANSFORMACIONES ######### */
+
+/*# sourceMappingURL=style.css.map */

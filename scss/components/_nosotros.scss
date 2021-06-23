@@ -1,0 +1,89 @@
+
+#quienesTitle {
+    text-align: center;
+}
+
+.quienesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+        "officeThree officeThree usImage"
+        "officeOne officeTwo usImage";
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    grid-gap: 2vw;
+}
+
+.quienesSomos {
+    padding: 10px;
+}
+
+.quienesGaleria img {
+    border-radius: 8px;
+    border: 1px solid $prussianBlue;
+}
+
+.quienesDescription {
+    grid-area: quienesDescription;
+    margin-bottom: 20px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 400px) {
+    .quienesGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:
+            "officeThree officeThree"
+            "officeOne officeTwo";
+        justify-items: stretch;
+        align-items: stretch;
+        justify-content: space-evenly;
+        grid-gap: 2vw;
+    }
+
+    .usImage {
+        display: none;
+    }
+}
+
+.usImage {
+    grid-area: usImage;
+    width: 100%;
+}
+
+#officeOne {
+    grid-area: officeOne;
+    width: 100%;
+}
+
+#officeTwo {
+    grid-area: officeTwo;
+    width: 100%;
+}
+
+#officeThree {
+    grid-area: officeThree;
+    width: 100%;
+}
+
+.clientes img {
+    width: 250px;
+    height: 180px;
+    border: 5px;
+    border-style: solid;
+    border-color: $celadonBlue;
+    box-shadow: 4px 4px 4px grey;
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+.clientesLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

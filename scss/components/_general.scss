@@ -1,0 +1,82 @@
+/* ######### RESETEO DE ESTILO ######### */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ######### Fuentes Importadas ######### */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ######### CUERPO ######### */
+body {
+	background-color: $honeydew;
+	font-family: 'Montserrat', sans-serif;
+	// font-weight: 200;
+	font-weight: bold;
+	padding: 1px 20px;
+	background:
+		linear-gradient(rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)),
+		url("../images/datacenter.jpeg");
+	/* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/datacenter2.jpg"); */
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+}
+
+/* ######### FIN CUERPO ######### */
+
+/* ######### TITULOS ######### */
+h1 {
+	@include titulos($imperialRed, map-get($fontSizeTitle, grande), left);
+}
+
+h2 {
+	@include titulos($prussianBlue, map-get($fontSizeTitle, mediano), center);
+}
+
+h3 {
+	@include titulos($prussianBlue, map-get($fontSizeTitle, chico), left);
+}
+
+/* ######### FIN TITULOS ######### */
+
+/* ######### PARRAFOS ######### */
+p {
+	margin: 5px;
+	text-align: justify;
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	text-decoration: none;
+	font-style: normal;
+	line-height: 25px;
+}
+
+@media only screen and (max-width: 469px) {
+	p {
+		font-size: small;
+		text-align: left;
+		line-height: 20px;
+	}
+}
+
+/* ######### FIN PARRAFOS ######### */
+
+
+/* Revierto estilo de Boostrap que genera padding-left indeseado a la sección secundaria */
+ol,
+ul {
+	padding-left: 0;
+}
+
+/* Pagina de error */
+.tituloError {
+	text-align: center;
+}
+.volverHome {
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,124 @@
+/* ######### HEADER ######### */
+header {
+    nav {
+        .contenedor {
+            justify-content: space-between;
+
+            .navBoton {
+                background-color: $prussianBlueLight;
+                box-shadow: 1px 0px 10px 0px rgba(255, 255, 255, 0.75);
+            }
+
+            a {
+                .logo {
+                    padding: 16px 23px;
+                    margin: 5px 10px 5px 0;
+                    border: 2px solid $prussianBlue;
+                    border-radius: 5px;
+                    width: 280px;
+                    background: linear-gradient(rgba(255, 255, 255, 0.5),
+                            rgba(255, 255, 255, 0.9));
+                }
+
+                @media (max-width: 992px) {
+                    .logo {
+                        width: 220px;
+                        margin: 5px auto;
+                    }
+                }
+            }
+
+            .menu {
+                font-weight: bold;
+                width: 60%;
+                box-shadow: 1px 0px 10px 0px rgba(255, 255, 255, 0.75);
+                border-radius: 5px;
+                background-color: $prussianBlueLight;
+                z-index: 10;
+                flex-grow: 0;
+
+                ul {
+                    width: 100%;
+                    justify-content: space-evenly;
+
+                    li {
+                        display: inline-block;
+                        border-radius: 5px;
+                        position: relative;
+                        width: 100%;
+
+                        &:first-of-type .menuItem {
+                            border-radius: 5px 0 0 5px;
+                        }
+
+                        &:last-of-type .menuItem {
+                            border-radius: 0 5px 5px 0;
+                        }
+
+                        .menuItem {
+                            display: block;
+                            color: $honeydew;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                            font-size: large;
+
+                            &:hover {
+                                background-color: $celadonBlue;
+                            }
+                        }
+
+                        @media (max-width: 992px) {
+                            .menuItem {
+                                padding: 10px;
+                                text-align: left;
+                            }
+                        }
+
+                        .dropdownContent {
+                            display: none;
+                            min-width: 100%;
+                            position: absolute;
+                            background-color: $powderBlueLight;
+                            box-shadow: 4px 4px 4px rgb(36, 36, 36);
+                            border-radius: 0 0 5px 5px;
+
+                            a {
+                                display: block;
+                                text-align: left;
+                                text-decoration: none;
+                                padding: 5px 5px;
+                                color: $prussianBlue;
+                                border: 0.5px solid;
+                                border-top: 0;
+                                border-color: $prussianBlue;
+                                padding: 10px 20px;
+                                white-space: nowrap;
+
+                                &:last-of-type {
+                                    border-radius: 0 0 5px 5px;
+                                }
+
+                                &:hover {
+                                    background-color: $celadonBlue;
+                                }
+                            }
+                        }
+
+                        &:hover .dropdownContent {
+                            display: block;
+                        }
+                    }
+
+                    @media (max-width: 992px) {
+                        li:hover .dropdownContent {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ######### FIN HEADER ######### */

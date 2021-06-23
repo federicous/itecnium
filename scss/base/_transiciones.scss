@@ -1,0 +1,18 @@
+/* ######### TRANSISIONES Y TRANSFORMACIONES ######### */
+.transitionScale * {
+	transition: all 0.5s ease-out;
+    }
+    
+    .transitionScale *:hover {
+	transform: scale(1.02);
+    }
+    
+    .transitionScalePlus * {
+	transition: all 0.3s ease-out;
+    }
+    
+    .transitionScalePlus *:hover {
+	transform: scale(1.2);
+    }
+    
+    /* ######### FIN TRANSISIONES Y TRANSFORMACIONES ######### */

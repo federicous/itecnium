@@ -1,0 +1,156 @@
+/* ######## SECCIÓN PRINCIPAL ######### */
+section {
+    padding: 15px 15px;
+    margin: 30px 0px;
+    background-color: $honeydewLight;
+    border-radius: 5px;
+}
+
+section ul li {
+    padding: 5px 5px;
+    list-style: none;
+}
+
+.mainTitle {
+    font-size: 60px;
+    color: $powderBlue;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7));
+    align-items: center;
+}
+
+.mainSectionText {
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.mainImage {
+    flex: 50%;
+}
+
+.mainImage img {
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.mainSection p {
+    margin: 20px 0 5px 0px;
+    text-align: left;
+    line-height: 35px;
+    font-size: 22px;
+    color: $honeydew;
+}
+
+@media only screen and (max-width: 469px) {
+    .mainImage {
+        width: 100%;
+    }
+
+    .mainTitle {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .mainSection p {
+        text-align: justify;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    h1 {
+        color: $imperialRed;
+        font-size: 30px;
+    }
+
+    h2 {
+        color: $prussianBlue;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 470px) and (max-width: 960px) {
+
+    .mainImage {
+        width: 100%;
+    }
+
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        flex: 30%;
+    }
+}
+
+/* ########## sección secundaria ######### */
+
+.secondarySection ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.secondarySection li {
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+    align-items: center;
+}
+
+.secondarySection p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.secondarySection li h3 {
+    text-align: center;
+}
+
+.homeImages {
+    width: 180px;
+    height: 180px;
+    border: 5px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: $celadonBlue;
+    box-shadow: 4px 4px 4px grey;
+}
+
+.homeImages:hover {
+    border-style: solid;
+    border-color: $imperialRed;
+}
+
+.partners div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partners img {
+    width: 200px;
+    height: 180px;
+    border: 5px;
+    border-style: solid;
+    border-color: $celadonBlue;
+    box-shadow: 4px 4px 4px grey;
+    padding: 15px;
+    margin: 20px 20px;
+}
