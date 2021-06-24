@@ -41,6 +41,10 @@ h3 {
 	@include titulos($prussianBlue, map-get($fontSizeTitle, chico), left);
 }
 
+h4 {
+	@include titulos($honeydew, map-get($fontSizeTitle, chico), left);
+}
+
 /* ######### FIN TITULOS ######### */
 
 /* ######### PARRAFOS ######### */
@@ -76,6 +80,7 @@ ul {
 .tituloError {
 	text-align: center;
 }
+
 .volverHome {
 	display: flex;
 	justify-content: center;

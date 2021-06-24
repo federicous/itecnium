@@ -45,6 +45,13 @@ h3 {
   margin: 0.25rem 0 1rem 0;
 }
 
+h4 {
+  color: #f1faeeff;
+  font-size: 20px;
+  text-align: left;
+  margin: 0.25rem 0 1rem 0;
+}
+
 /* ######### FIN TITULOS ######### */
 /* ######### PARRAFOS ######### */
 p {
@@ -468,9 +475,14 @@ footer .footerItems {
   justify-content: center;
   align-items: center;
 }
-footer .footerItems .footerParagraph {
+footer .footerItems div h4 {
+  margin: 10px;
+}
+footer .footerItems div .footerParagraph {
   color: white;
   margin: 10px;
+  font-size: small;
+  line-height: normal;
 }
 footer .footerItems iframe {
   margin: 10px;

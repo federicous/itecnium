@@ -18,9 +18,17 @@ footer {
         justify-content: center;
         align-items: center;
 
-        .footerParagraph {
-            color: white;
-            margin: 10px;
+        div {
+            h4 {
+                margin: 10px;
+            }
+
+            .footerParagraph {
+                color: white;
+                margin: 10px;
+                font-size: small;
+                line-height: normal;
+            }
         }
 
         iframe {
