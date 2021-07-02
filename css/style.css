@@ -329,11 +329,22 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   margin: 20px 20px;
 }
 
-#quienesTitle {
+/* Sección nosotros */
+.nosotros .quienesTitle {
   text-align: center;
 }
-
-.quienesGrid {
+.nosotros .quienesSomos {
+  padding: 10px;
+}
+.nosotros .quienesSomos .quienesDescription {
+  grid-area: quienesDescription;
+  margin-bottom: 20px;
+}
+.nosotros .quienesSomos .quienesGaleria img {
+  border-radius: 8px;
+  border: 1px solid #1d3557ff;
+}
+.nosotros .quienesSomos .quienesGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr 1fr;
@@ -343,19 +354,21 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   justify-content: space-evenly;
   grid-gap: 2vw;
 }
-
-.quienesSomos {
-  padding: 10px;
+.nosotros .quienesSomos .quienesGrid .usImage {
+  grid-area: usImage;
+  width: 100%;
 }
-
-.quienesGaleria img {
-  border-radius: 8px;
-  border: 1px solid #1d3557ff;
+.nosotros .quienesSomos .quienesGrid .officeOne {
+  grid-area: officeOne;
+  width: 100%;
 }
-
-.quienesDescription {
-  grid-area: quienesDescription;
-  margin-bottom: 20px;
+.nosotros .quienesSomos .quienesGrid .officeTwo {
+  grid-area: officeTwo;
+  width: 100%;
+}
+.nosotros .quienesSomos .quienesGrid .officeThree {
+  grid-area: officeThree;
+  width: 100%;
 }
 
 /* Mobile styles */
@@ -375,27 +388,14 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
     display: none;
   }
 }
-.usImage {
-  grid-area: usImage;
-  width: 100%;
+/* Sección Clientes */
+.clientes .clientesLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-
-#officeOne {
-  grid-area: officeOne;
-  width: 100%;
-}
-
-#officeTwo {
-  grid-area: officeTwo;
-  width: 100%;
-}
-
-#officeThree {
-  grid-area: officeThree;
-  width: 100%;
-}
-
-.clientes img {
+.clientes .clientesLogos img {
   width: 250px;
   height: 180px;
   border: 5px;
@@ -404,13 +404,6 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   box-shadow: 4px 4px 4px grey;
   padding: 15px;
   margin: 20px 10px;
-}
-
-.clientesLogos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .videoProyectos {
