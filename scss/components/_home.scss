@@ -1,21 +1,4 @@
 /* ######## SECCIÓN PRINCIPAL ######### */
-section {
-    padding: 15px 15px;
-    margin: 30px 0px;
-    background-color: $honeydewLight;
-    border-radius: 5px;
-}
-
-section ul li {
-    padding: 5px 5px;
-    list-style: none;
-}
-
-.mainTitle {
-    font-size: 60px;
-    color: $powderBlue;
-}
-
 .mainSection {
     display: flex;
     flex-direction: row;
@@ -24,34 +7,41 @@ section ul li {
         linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7));
     align-items: center;
+
+    .mainSectionText {
+        display: flex;
+        flex-direction: column;
+        flex: 30%;
+        padding: 5px;
+        margin-right: 10px;
+
+        .mainTitle {
+            font-size: 60px;
+            color: $powderBlue;
+        }
+
+        p {
+            margin: 20px 0 5px 0px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 22px;
+            color: $honeydew;
+        }
+    }
+
+    .mainImage {
+        flex: 50%;
+
+        img {
+            box-shadow: 4px 4px 4px grey;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
-.mainSectionText {
-    display: flex;
-    flex-direction: column;
-    flex: 30%;
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.mainImage {
-    flex: 50%;
-}
-
-.mainImage img {
-    box-shadow: 4px 4px 4px grey;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-}
-
-.mainSection p {
-    margin: 20px 0 5px 0px;
-    text-align: left;
-    line-height: 35px;
-    font-size: 22px;
-    color: $honeydew;
-}
+// Media queries
 
 @media only screen and (max-width: 469px) {
     .mainImage {
@@ -98,59 +88,64 @@ section ul li {
 
 /* ########## sección secundaria ######### */
 
-.secondarySection ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.secondarySection {
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
+        li {
+            display: flex;
+            flex-direction: column;
+            flex: 20%;
+            align-items: center;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            .homeImages {
+                width: 180px;
+                height: 180px;
+                border: 5px;
+                border-radius: 50%;
+                border-style: solid;
+                border-color: $celadonBlue;
+                box-shadow: 4px 4px 4px grey;
+
+                &:hover {
+                    border-style: solid;
+                    border-color: $imperialRed;
+                }
+            }
+        }
+    }
 }
 
-.secondarySection li {
-    display: flex;
-    flex-direction: column;
-    flex: 20%;
-    align-items: center;
-}
+/* ########## sección partners ######### */
+.partners {
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
-.secondarySection p {
-    font-size: 16px;
-    text-align: center;
-}
+        img {
+            width: 200px;
+            height: 180px;
+            border: 5px;
+            border-style: solid;
+            border-color: $celadonBlue;
+            box-shadow: 4px 4px 4px grey;
+            padding: 15px;
+            margin: 20px 20px;
+        }
 
-.secondarySection li h3 {
-    text-align: center;
-}
-
-.homeImages {
-    width: 180px;
-    height: 180px;
-    border: 5px;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: $celadonBlue;
-    box-shadow: 4px 4px 4px grey;
-}
-
-.homeImages:hover {
-    border-style: solid;
-    border-color: $imperialRed;
-}
-
-.partners div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.partners img {
-    width: 200px;
-    height: 180px;
-    border: 5px;
-    border-style: solid;
-    border-color: $celadonBlue;
-    box-shadow: 4px 4px 4px grey;
-    padding: 15px;
-    margin: 20px 20px;
+    }
 }

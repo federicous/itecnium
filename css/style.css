@@ -15,7 +15,6 @@ body {
   font-weight: bold;
   padding: 1px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/datacenter.jpeg");
-  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/datacenter2.jpg"); */
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -53,6 +52,20 @@ h4 {
 }
 
 /* ######### FIN TITULOS ######### */
+/* ######### SECCIONES ######### */
+section {
+  padding: 15px 15px;
+  margin: 30px 0px;
+  background-color: rgba(241, 250, 238, 0.6);
+  border-radius: 5px;
+}
+
+section ul li {
+  padding: 5px 5px;
+  list-style: none;
+}
+
+/* ######### FIN SECCIONES ######### */
 /* ######### PARRAFOS ######### */
 p {
   margin: 5px;
@@ -190,23 +203,6 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
 
 /* ######### FIN HEADER ######### */
 /* ######## SECCIÓN PRINCIPAL ######### */
-section {
-  padding: 15px 15px;
-  margin: 30px 0px;
-  background-color: rgba(241, 250, 238, 0.6);
-  border-radius: 5px;
-}
-
-section ul li {
-  padding: 5px 5px;
-  list-style: none;
-}
-
-.mainTitle {
-  font-size: 60px;
-  color: #a8dadcff;
-}
-
 .mainSection {
   display: flex;
   flex-direction: row;
@@ -214,32 +210,32 @@ section ul li {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   align-items: center;
 }
-
-.mainSectionText {
+.mainSection .mainSectionText {
   display: flex;
   flex-direction: column;
   flex: 30%;
   padding: 5px;
   margin-right: 10px;
 }
-
-.mainImage {
-  flex: 50%;
+.mainSection .mainSectionText .mainTitle {
+  font-size: 60px;
+  color: #a8dadcff;
 }
-
-.mainImage img {
-  box-shadow: 4px 4px 4px grey;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-}
-
-.mainSection p {
+.mainSection .mainSectionText p {
   margin: 20px 0 5px 0px;
   text-align: left;
   line-height: 35px;
   font-size: 22px;
   color: #f1faeeff;
+}
+.mainSection .mainImage {
+  flex: 50%;
+}
+.mainSection .mainImage img {
+  box-shadow: 4px 4px 4px grey;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 469px) {
@@ -288,24 +284,20 @@ section ul li {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-.secondarySection li {
+.secondarySection ul li {
   display: flex;
   flex-direction: column;
   flex: 20%;
   align-items: center;
 }
-
-.secondarySection p {
+.secondarySection ul li p {
   font-size: 16px;
   text-align: center;
 }
-
-.secondarySection li h3 {
+.secondarySection ul li h3 {
   text-align: center;
 }
-
-.homeImages {
+.secondarySection ul li .homeImages {
   width: 180px;
   height: 180px;
   border: 5px;
@@ -314,20 +306,19 @@ section ul li {
   border-color: #457b9dff;
   box-shadow: 4px 4px 4px grey;
 }
-
-.homeImages:hover {
+.secondarySection ul li .homeImages:hover {
   border-style: solid;
   border-color: #e63946ff;
 }
 
+/* ########## sección partners ######### */
 .partners div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-.partners img {
+.partners div img {
   width: 200px;
   height: 180px;
   border: 5px;
@@ -524,6 +515,16 @@ footer .footerItems .footerSocial a img {
 }
 
 /* ######### FIN PIE DE PAGINA ######### */
+/* Pagina de error */
+.tituloError {
+  text-align: center;
+}
+
+.volverHome {
+  display: flex;
+  justify-content: center;
+}
+
 /* ######### TRANSISIONES Y TRANSFORMACIONES ######### */
 .transitionScale * {
   transition: all 0.5s ease-out;
