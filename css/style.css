@@ -416,6 +416,11 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   border-radius: 5px;
 }
 
+.subLista li {
+  list-style: inside;
+  color: black;
+}
+
 /* ######### TABLA ######### */
 table {
   margin: 5px 5px;
