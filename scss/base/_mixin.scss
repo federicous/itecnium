@@ -5,6 +5,6 @@
 	@if $fontSize == map-get($fontSizeTitle , grande) {
 		margin: 0.5rem 0;
 	} @else {
-		margin: 0.25rem 0 1rem 0;
+		margin: 1rem 0 1rem 0;
 	}
 }

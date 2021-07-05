@@ -34,21 +34,21 @@ h2 {
   color: #1d3557ff;
   font-size: 35px;
   text-align: center;
-  margin: 0.25rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 h3 {
   color: #1d3557ff;
   font-size: 20px;
   text-align: left;
-  margin: 0.25rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 h4 {
   color: #f1faeeff;
   font-size: 20px;
   text-align: left;
-  margin: 0.25rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 /* ######### FIN TITULOS ######### */
@@ -59,10 +59,13 @@ section {
   background-color: rgba(241, 250, 238, 0.6);
   border-radius: 5px;
 }
-
 section ul li {
   padding: 5px 5px;
   list-style: none;
+}
+section ul li .subLista li {
+  list-style: inside;
+  color: black;
 }
 
 /* ######### FIN SECCIONES ######### */
