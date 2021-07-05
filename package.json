@@ -1,11 +1,22 @@
 {
-  "name": "clase-11-desafio-sass",
+  "name": "itecnium",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Federico Yemes",
   "license": "ISC",
-  "description": ""
+  "description": "web de Itecnim",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicous/itecnium.git"
+  },
+  "keywords": [
+    "itecnium"
+  ],
+  "bugs": {
+    "url": "https://github.com/federicous/itecnium/issues"
+  },
+  "homepage": "https://github.com/federicous/itecnium#readme"
 }
