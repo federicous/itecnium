@@ -83,9 +83,11 @@
             <div class="mb-3 row">
                 <div class="col-lg-6">
                     <label for="inputName" class="form-label">Nombre</label>
-                    <input type="text" class="mb-3 form-control" id="inputName" placeholder="ingresar nombre">
+                    <input type="text" class="mb-3 form-control" id="inputName" name="inputName" placeholder="ingresar nombre">
+                    
                     <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="mb-3 form-control" id="inputEmail" placeholder="example@empresa.com">
+                    <input type="email" class="mb-3 form-control" id="inputEmail" name="inputEmail" placeholder="example@empresa.com">
+                    
                     <label for="inputCliente" class="form-label">Tipo de cliente</label>
                     <select id="inputCliente" class="mb-3 form-select">
                         <option selected>Pymes</option>
@@ -94,15 +96,16 @@
                         <option>Institución</option>
                         <option>Otro</option>
                     </select>
+                    
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck" checked="">
-                        <label class="form-check-label" for="gridCheck">Recibir lista de precios</label>
+                        <label for="listaPrecios">Recibir lista de precios</label>
+                        <input type="checkbox" id="listaPrecios" name="listaPrecios" checked="">
                     </div>
                 </div>
                 <div class="col-lg-6 form-label">
-                    <label for="floatingTextarea" class="form-label">Mensaje</label>
+                    <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea class="h-100 pb-3 form-control" placeholder="Escriba aquí su mensaje"
-                        id="floatingTextarea"></textarea>
+                        id="mensaje" name="mensaje"></textarea>
                 </div>
             </div>
             <div class="mt-3 btn-group">

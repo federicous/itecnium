@@ -1,16 +1,19 @@
 <?php
-$nombre = $_POST['nombre'];
-$mail = $_POST['email'];
-$asunto = $_POST['asunto'];
+$inputName = $_POST['inputName'];
+$inputEmail = $_POST['inputEmail'];
+$inputCliente = $_POST['inputCliente'];
 $mensaje = $_POST['mensaje'];
+$listaPrecios = $_POST['listaPrecios'];
 
-$header = 'From: ' . $mail . " \r\n";
+$header = 'From: ' . $inputEmail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 ​
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje = "Este mensaje fue enviado por " . $inputName . ",\r\n";
+$mensaje .= "Su e-mail es: " . $inputEmail . " \r\n";
+$mensaje .= "Tipo de cliente: " . $inputCliente . " \r\n";
+$mensaje .= "Recibier lista de precios: " . $listaPrecios . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
