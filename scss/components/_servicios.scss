@@ -7,3 +7,10 @@
     margin: 20px auto;
     border-radius: 5px;
 }
+
+.subLista {
+    li {
+        list-style: inside;
+        color: black;
+    }
+}
