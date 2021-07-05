@@ -465,6 +465,13 @@ footer .footerItems {
 footer .footerItems div h4 {
   margin: 10px;
 }
+footer .footerItems div .footerTitle {
+  color: #f1faeeff;
+  font-size: 20px;
+  text-align: left;
+  margin: 1rem 0 1rem 0;
+  margin: 10px;
+}
 footer .footerItems div .footerParagraph {
   color: white;
   margin: 10px;
