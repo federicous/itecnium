@@ -23,6 +23,11 @@ footer {
                 margin: 10px;
             }
 
+            .footerTitle {
+                @include titulos($honeydew, map-get($fontSizeTitle, chico), left);
+                margin: 10px;
+            }
+
             .footerParagraph {
                 color: white;
                 margin: 10px;
