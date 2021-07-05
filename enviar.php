@@ -9,7 +9,7 @@ $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 ​
-$mensaje = "Este mensaje fue enviado por " . $inputName . ",\r\n";
+$mensaje = "Este mensaje fue enviado por " . $inputName . "\r\n";
 $mensaje .= "Su e-mail es: " . $inputEmail . " \r\n";
 $mensaje .= "Tipo de cliente: " . $inputCliente . " \r\n";
 $mensaje .= "Recibier lista de precios: " . $listaPrecios . " \r\n";
