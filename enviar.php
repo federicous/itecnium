@@ -2,7 +2,6 @@
 $inputName = $_POST['inputName'];
 $inputEmail = $_POST['inputEmail'];
 $inputCliente = $_POST['inputCliente'];
-$mensaje = $_POST['mensaje'];
 $listaPrecios = $_POST['listaPrecios'];
 
 $header = 'From: ' . $inputEmail . " \r\n";
