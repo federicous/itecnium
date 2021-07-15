@@ -323,7 +323,6 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
 }
 .partners div img {
   width: 200px;
-  height: 180px;
   border: 5px;
   border-style: solid;
   border-color: #457b9dff;
@@ -400,7 +399,6 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
 }
 .clientes .clientesLogos img {
   width: 250px;
-  height: 180px;
   border: 5px;
   border-style: solid;
   border-color: #457b9dff;
