@@ -375,10 +375,6 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
     justify-content: space-evenly;
     grid-gap: 2vw;
   }
-
-  .usImage {
-    display: none;
-  }
 }
 /* Sección Clientes */
 .clientes .clientesLogos {
