@@ -43,37 +43,28 @@
 
 // Media queries
 
-@media only screen and (max-width: 469px) {
-    .mainImage {
-        width: 100%;
-    }
+@media (max-width: 469px) {
+    .mainSection {
+        .mainImage {
+            width: 100%;
+        }
 
-    .mainTitle {
-        font-size: 36px;
-        text-align: center;
-    }
+        .mainSectionText {
+            .mainTitle {
+                font-size: 36px;
+                text-align: center;
+            }
 
-    .mainSection p {
-        text-align: justify;
-        line-height: 20px;
-        font-size: 15px;
+            p {
+                text-align: justify;
+                line-height: 20px;
+                font-size: 15px;
+            }
+        }
     }
-
-    h1 {
-        color: $imperialRed;
-        font-size: 30px;
-    }
-
-    h2 {
-        color: $prussianBlue;
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-
 }
 
-@media only screen and (min-width: 470px) and (max-width: 960px) {
+@media (min-width: 470px) and (max-width: 960px) {
 
     .mainImage {
         width: 100%;

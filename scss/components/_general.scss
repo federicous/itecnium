@@ -13,6 +13,7 @@ body {
 	background-color: $honeydew;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
+	font-size: large;
 	padding: 1px 20px;
 	background:
 		linear-gradient(rgba(0, 0, 0, 0.3),
@@ -85,10 +86,13 @@ p {
 }
 
 @media only screen and (max-width: 469px) {
-	p {
+	body {
 		font-size: small;
-		text-align: left;
-		line-height: 20px;
+		p {
+			font-size: small;
+			text-align: justify;
+			line-height: 20px;
+		}
 	}
 }
 
