@@ -13,7 +13,8 @@ body {
 	background-color: $honeydew;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	font-size: large;
+	// font-size: large;
+	font-size: clamp(13px, 1.25vw + 0.1rem, 18px);
 	padding: 1px 20px;
 	background:
 		linear-gradient(rgba(0, 0, 0, 0.3),
@@ -80,19 +81,21 @@ p {
 	text-align: justify;
 	color: black;
 	font-weight: bold;
-	font-size: large;
+	// font-size: large;
+	font-size: clamp(13px, 1.25vw + 0.1rem, 18px);
 	text-decoration: none;
 	font-style: normal;
-	line-height: 25px;
+	// line-height: 25px;
+	line-height: clamp(20px,1.75vw + 0.25rem, 25px);
 }
 
 @media only screen and (max-width: 469px) {
 	body {
-		font-size: small;
+		// font-size: small;
 		p {
-			font-size: small;
+			// font-size: small;
 			text-align: justify;
-			line-height: 20px;
+			// line-height: 20px;
 		}
 	}
 }
