@@ -16,7 +16,7 @@
         margin-right: 10px;
 
         .mainTitle {
-            font-size: clamp(36px, 4.5vw, 60px);
+            font-size: clamp(36px, 4vw + 0.5rem, 60px);
             color: $powderBlue;
         }
 
