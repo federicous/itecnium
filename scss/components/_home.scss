@@ -94,7 +94,8 @@
             align-items: center;
 
             p {
-                font-size: 16px;
+                // font-size: 16px;
+                font-size: clamp(13px, 1.25vw + 0.1rem, 16px);
                 text-align: center;
             }
 

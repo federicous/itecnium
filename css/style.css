@@ -26,28 +26,28 @@ body {
 /* ######### TITULOS ######### */
 h1 {
   color: #e63946ff;
-  font-size: 40px;
+  font-size: clamp(30px, 4.25vw + 0.5rem, 40px);
   text-align: left;
   margin: 0.5rem 0;
 }
 
 h2 {
   color: #1d3557ff;
-  font-size: 35px;
+  font-size: clamp(25px, 4.25vw + 0.5rem, 35px);
   text-align: center;
   margin: 1rem 0 1rem 0;
 }
 
 h3 {
   color: #1d3557ff;
-  font-size: 20px;
+  font-size: clamp(20px, 3.25vw + 0.5rem, 25px);
   text-align: left;
   margin: 1rem 0 1rem 0;
 }
 
 h4 {
   color: #f1faeeff;
-  font-size: 20px;
+  font-size: clamp(20px, 3.25vw + 0.5rem, 25px);
   text-align: left;
   margin: 1rem 0 1rem 0;
 }
@@ -77,7 +77,6 @@ p {
   text-align: justify;
   color: black;
   font-weight: bold;
-  font-size: clamp(13px, 1.25vw + 0.1rem, 18px);
   text-decoration: none;
   font-style: normal;
   line-height: clamp(20px,1.75vw + 0.25rem, 25px);
@@ -123,7 +122,7 @@ header nav .contenedor a .logo {
 }
 @media (max-width: 992px) {
   header nav .contenedor a .logo {
-    width: 220px;
+    width: clamp(150px, 47vw + 0.5rem, 220px);
     margin: 5px auto;
   }
 }
@@ -281,7 +280,7 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   align-items: center;
 }
 .secondarySection ul li p {
-  font-size: 16px;
+  font-size: clamp(13px, 1.25vw + 0.1rem, 16px);
   text-align: center;
 }
 .secondarySection ul li h3 {
@@ -449,7 +448,7 @@ footer .footerItems div h4 {
 }
 footer .footerItems div .footerTitle {
   color: #f1faeeff;
-  font-size: 20px;
+  font-size: clamp(20px, 3.25vw + 0.5rem, 25px);
   text-align: left;
   margin: 1rem 0 1rem 0;
   margin: 10px;
