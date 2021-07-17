@@ -117,7 +117,7 @@ header nav .contenedor a .logo {
   margin: 5px 10px 5px 0;
   border: 2px solid #1d3557ff;
   border-radius: 5px;
-  width: clamp(160px, 47vw + 0.5rem, 280px);
+  width: clamp(140px, 47vw + 0.5rem, 280px);
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
 }
 @media (max-width: 992px) {
@@ -309,13 +309,13 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   justify-content: space-evenly;
 }
 .partners div img {
-  width: 200px;
+  width: clamp(82px, 28vw + 0.5rem, 250px);
   border: 5px;
   border-style: solid;
   border-color: #457b9dff;
   box-shadow: 4px 4px 4px grey;
-  padding: 15px;
-  margin: 20px 20px;
+  padding: clamp(4px,1vw + 0.1rem,15px);
+  margin: clamp(10px,3vw + 0.1rem,20px) clamp(4px,1vw + 0.1rem,10px);
 }
 
 /* Sección nosotros */
@@ -381,13 +381,13 @@ header nav .contenedor .menu ul li:hover .dropdownContent {
   flex-wrap: wrap;
 }
 .clientes .clientesLogos img {
-  width: 250px;
+  width: clamp(82px, 28vw + 0.5rem, 250px);
   border: 5px;
   border-style: solid;
   border-color: #457b9dff;
   box-shadow: 4px 4px 4px grey;
-  padding: 15px;
-  margin: 20px 10px;
+  padding: clamp(4px,1vw + 0.1rem,15px);
+  margin: clamp(10px,3vw + 0.1rem,20px) clamp(4px,1vw + 0.1rem,10px);
 }
 
 .videoProyectos {
@@ -412,7 +412,7 @@ table {
 tr,
 th,
 td {
-  padding: 8px;
+  padding: clamp(2px,0.25vw + 0.1rem,8px);
   border-style: solid;
   border-color: black;
   border-width: 0.4px;

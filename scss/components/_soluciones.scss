@@ -10,7 +10,7 @@ table {
 tr,
 th,
 td {
-    padding: 8px;
+    padding: clamp(2px,0.25vw + 0.1rem,8px);
     border-style: solid;
     border-color: black;
     border-width: 0.4px;

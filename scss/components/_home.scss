@@ -130,13 +130,13 @@
         justify-content: space-evenly;
 
         img {
-            width: 200px;
+            width: clamp(82px, 28vw + 0.5rem, 250px);
             border: 5px;
             border-style: solid;
             border-color: $celadonBlue;
             box-shadow: 4px 4px 4px grey;
-            padding: 15px;
-            margin: 20px 20px;
+            padding: clamp(4px,1vw + 0.1rem,15px);
+            margin: clamp(10px,3vw + 0.1rem,20px) clamp(4px,1vw + 0.1rem,10px);
         }
 
     }
