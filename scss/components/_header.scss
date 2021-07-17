@@ -11,7 +11,7 @@ header {
 
             a {
                 .logo {
-                    padding: 16px 23px;
+                    padding: clamp(10px,3vw + 0.1rem,16px) clamp(10px,3vw + 0.1rem,23px);
                     margin: 5px 10px 5px 0;
                     border: 2px solid $prussianBlue;
                     border-radius: 5px;
