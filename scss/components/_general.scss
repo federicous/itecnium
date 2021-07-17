@@ -14,7 +14,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: clamp(13px, 1.25vw + 0.1rem, 18px);
-	padding: 1px clamp(10px, 2.25vw + 0.1rem, 20px);
+	padding: 1px 20px;
 	background:
 		linear-gradient(rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.3)),
