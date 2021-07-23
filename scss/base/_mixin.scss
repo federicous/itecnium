@@ -8,3 +8,17 @@
 		margin: 1rem 0 1rem 0;
 	}
 }
+
+@mixin prefijos($propiedad) {
+        -webkit-transform: $propiedad;
+        -o-transform: $propiedad;
+        -moz-transform: $propiedad;
+        transform: $propiedad;
+}
+
+@mixin transicion($propiedad) {
+	-webkit-transition: $propiedad;
+	-o-transition: $propiedad;
+	-moz-transition: $propiedad;
+	transition: $propiedad;
+}

@@ -519,18 +519,30 @@ footer .footerItems .footerSocial a img {
 
 /* ######### TRANSISIONES Y TRANSFORMACIONES ######### */
 .transitionScale * {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .transitionScale *:hover {
+  -webkit-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -moz-transform: scale(1.02);
   transform: scale(1.02);
 }
 
 .transitionScalePlus * {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 .transitionScalePlus *:hover {
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
   transform: scale(1.2);
 }
 
