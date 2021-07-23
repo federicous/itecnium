@@ -86,6 +86,21 @@ p {
 
 /* ######### FIN PARRAFOS ######### */
 
+/* ######### Boton para subir ######### */
+.ir-arriba{
+	display:none;
+	background-repeat:no-repeat;
+	font-size:20px;
+	color: $imperialRedLight;
+	cursor:pointer;
+	position:fixed;
+	bottom:40px;
+	right:-6px;
+	z-index:2;
+      }
+/* ######### Fin Boton para subir ######### */
+
+
 /* Revierto estilo de Boostrap que genera padding-left indeseado a la sección secundaria */
 ol,
 ul {
